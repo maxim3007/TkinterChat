@@ -19,6 +19,7 @@ class Server():
         self.s.listen(100)
 
         self.username_lookup = {}
+        print(f"running at {socket.gethostbyname(socket.gethostname())}")
 
         while True:
             c, addr = self.s.accept()
